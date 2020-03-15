@@ -8,7 +8,8 @@ namespace UnitTestLPlanner
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.AreSame(1, 1);
+            int actual = 1;
+            Assert.AreEqual(1, actual);
         }
     }
 }

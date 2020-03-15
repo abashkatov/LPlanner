@@ -8,10 +8,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{259024BB-DEB0-48DB-A8D1-C9011F993B8C}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		.github\workflows\dotnetcore.yml = .github\workflows\dotnetcore.yml
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestLPlanner", "UnitTestLPlanner\UnitTestLPlanner.csproj", "{C97AAC1F-08DA-494E-A07A-0382BB1E10CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestLPlanner", "UnitTestLPlanner\UnitTestLPlanner.csproj", "{C97AAC1F-08DA-494E-A07A-0382BB1E10CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
