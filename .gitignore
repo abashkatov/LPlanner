@@ -338,3 +338,8 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# SQLite db
+/LPlanner/planner.db
+/LPlanner/planner.db-shm
+/LPlanner/planner.db-wal
