@@ -9,7 +9,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace WpfApp2
+namespace LPlanner
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml
