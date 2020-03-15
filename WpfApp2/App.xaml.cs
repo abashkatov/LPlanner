@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -15,8 +16,17 @@ namespace WpfApp2
     {
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
+            #region Настройка контейнера
+            IServiceCollection services = new ServiceCollection();
+            services.AddTransient<MainWindow, MainWindow>();
+            #endregion
+
+            var provider = services.BuildServiceProvider();
+
+            #region Запуск основного окна
+            MainWindow mainWindow = provider.GetService<MainWindow>();
             mainWindow.Show();
+            #endregion
         }
     }
 }
